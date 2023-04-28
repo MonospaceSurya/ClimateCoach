@@ -20,10 +20,8 @@ os.environ["OPENAI_API_KEY"] = "sk-3bxIHMSZekAyBvUVauvoT3BlbkFJjbCBNpnjiOsDSNYpe
 # location of the pdf file/files.
 
 # Create a file uploader for the PDF document
-pdf_file = st.file_uploader("Upload a PDF document", type=["pdf"])
 
-reader = PdfReader(pdf_file.name)
-
+reader = PdfReader("input.pdf")
 
 
 # read data from the file and put them into a variable called raw_text
