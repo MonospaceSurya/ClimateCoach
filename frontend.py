@@ -17,7 +17,7 @@ pdf_file = st.file_uploader("Upload a PDF document", type=["pdf"])
 
 if pdf_file is not None:
 
-    reader = PdfReader("input.pdf")
+    reader = PdfReader("bunch.pdf")
 
     # read data from the file and put them into a variable called raw_text
     raw_text = ''
